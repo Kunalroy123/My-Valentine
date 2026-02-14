@@ -1,0 +1,20 @@
+<main class="main">
+  <div class="content">
+    <div class="heading-1">
+      <h1>Look At This Cuttie🥰</h1>
+    </div>  
+    <div class="gallery-card">
+        <div class="gallery">
+            <div class="photo-card" *ngFor="let pic of pictures">
+                <div class="photo">
+                <img [src]="pic.src" />
+                </div>
+                <p>{{ pic.caption }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="button-1">
+      <button class="back" (click)="onYesClick()">👈 BACK</button>
+    </div>
+  </div>
+</main>

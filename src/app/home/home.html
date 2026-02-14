@@ -1,0 +1,16 @@
+<main class="main">
+  <div class="content">
+    <div class="page-1">
+      <img  [src]="imagePath" />
+    </div>
+    <div class="heading-1">
+      <h1>{{heading}}</h1>
+      <p>Life is an incredible journey, and i want to spend every single second of it with you.</p>
+    </div>  
+    <div class="button-1">
+      <button class="yes" [style.transform]="'scale(' + yesScale + ')'"
+    (click)="onYesClick()">Yes</button>
+      <button class="no" (click)="onNoClick()">No</button>
+    </div>
+  </div>
+</main>

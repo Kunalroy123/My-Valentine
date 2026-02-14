@@ -1,0 +1,21 @@
+<main class="main">
+  <div class="content">
+    <div class="heading-1">
+      <h1>Quiz For You😚</h1>
+    </div>  
+     <div class="quize-card" *ngIf="!isCompleted  && questions[currentIndex]">
+        <p>{{questions[currentIndex].question}}</p>
+        <button
+            class="option"
+            *ngFor="let option of questions[currentIndex].options; let i = index"
+            (click)="selectAnswer(i)"
+            [disabled]="isLocked">{{ option }}
+        </button>
+    </div>
+    <p class="result" *ngIf="result">{{result}}</p>
+    <div class="button-1">
+      <button class="back" (click)="onYesClick()">👈 BACK</button>
+    </div>
+  </div>
+</main>
+
