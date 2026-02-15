@@ -19,16 +19,23 @@ export class Home {
     this.noClickCount++;
 
     if (this.noClickCount === 1) {
-      this.yesScale += 1.3;
+      this.yesScale += 0.8;
       this.heading = "Think again 😭";
       this.imagePath = "assets/bubu-dudu-bubu.gif"; 
     }
 
     else if (this.noClickCount === 2) {
+      this.heading = "Are you sure? 🤨";
+      this.imagePath = "assets/dudu-dudu-angry.gif";
+      this.yesScale += 0.8;
+    }
+
+    else if (this.noClickCount === 3) {
       this.heading = "Last chance 😡";
       this.imagePath = "assets/giphy.gif";
-      this.yesScale += 1.3;
+      this.yesScale += 0.9;
     }
+
   }
 
   onYesClick() {

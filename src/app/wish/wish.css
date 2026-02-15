@@ -51,10 +51,10 @@
     align-items: center;
     width: 100%;
     max-width: 850px;
-    margin: 3% auto;
+    margin: 1% auto;
     background-color: pink;
     border-radius: 20PX;
-    padding: 5%;
+    padding: 3%;
   }
 
   .page-1 {
